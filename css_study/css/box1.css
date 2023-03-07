@@ -1,0 +1,20 @@
+.text1{
+    display: inline-block;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+/* 인라인 요소는 마진을 좌우로만 먹음, 패딩은 적용이됨  */
+}
+.box1{
+    display: inline-block;
+    box-sizing: border-box; /* 보더의 사이즈까지를 박스크기로 볼것이다 */
+    margin: 10px;
+    border: 1px solid black;
+    padding: 5px;
+    width: 100px;
+    height: 100px; 
+    /* 컨텐츠 영역이 줄어들면 마진이 자동적으로 늘어난다 */
+    /* 사이즈는 마진을 제외하고 나온다 */
+}
