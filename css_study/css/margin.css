@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    margin-left: 0px auto;
+    width:1200px ;
+    height: 1000px;
+    background-color: whitesmoke;
+    
+}
+.box{
+    display: inline-block;
+    margin: 0px 20px;
+    width: 300px;
+    height: 150px;
+
+}
+.b1{
+    background-color: pink;
+}
+.b2{
+    background-color: skyblue;
+}
+.b3{
+    background-color: plum;
+}   
+
+.box2{
+   
+    margin: 20px 0px;
+    width: 300px;
+    height: 150px;
+
+}
+.b1{
+    margin-bottom: 50px;
+    background-color: peachpuff;
+}
+.b2{
+    background-color: rgb(105, 149, 167);
+}
+.b3{
+    background-color: rgb(238, 192, 238);
+}   
