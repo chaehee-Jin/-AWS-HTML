@@ -1,0 +1,11 @@
+ input[type] {
+    border: 3px solid palevioletred;
+ }
+
+ input[type = password]{
+    border: 3px solid plum;
+ } 
+ input[class |= text]{
+    background-color: peachpuff;
+    color: whitesmoke;
+ }

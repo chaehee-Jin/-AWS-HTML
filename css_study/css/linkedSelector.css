@@ -1,0 +1,17 @@
+main article section label {
+    color: powderblue;
+}
+
+main article section > input { /* 자식들에게만 적용 */
+    border: 3px solid navy;
+   
+}
+
+main article section h1 + label {
+    color: aqua;
+}
+
+main article div h2 ~ label {
+
+    color: pink;
+}

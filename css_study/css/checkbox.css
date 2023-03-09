@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]+label::after {
+    content: "";
+    display: flex;
+    justify-content: center;
+    border: 1px solid #dbdbdd;
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    line-height: 30px;
+    font-size: 30px;
+    color: white;
+
+
+
+}
+
+input[type=checkbox]:checked+label:after {
+    content: "●";
+    line-height: 39px;
+    color: navy;
+}
+
+input[type=checkbox]+label:nth-child(6):after {
+    /* body에서 6번째인 아이에게 이것을 적용해라 */
+    border: 1px solid gray;
+
+
+}

@@ -1,0 +1,36 @@
+.username-input{
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #dbdbdd;
+    height: 30px;
+
+   
+}
+.username-input:active{
+    background-color: #fafafa;
+}
+
+.username-input:focus{
+    border-bottom: 2px solid #121212;
+
+}
+.username-input:disabled{
+    background-color: #dbdbdd;
+}
+.ok-btn{
+    border: 1px solid #dbdbdd;
+    width: 50px;
+    height: 30px;
+    background-color: #fafafa;
+}
+.ok-btn :not(:disabled):hover{
+    border-color: white;
+    background-color: #dbdbdd;
+}
+.ok-btn:active{
+    background-color: #eee;
+}
+
+.ok-btn:disabled{
+    background-color: aquamarine;
+}
