@@ -11,6 +11,6 @@ console.log(name2);
 let test = 10; // let은 변수의 재선언도 막음 bar대신 let을 써야하는 이유
 console.log(test); // undefined는 자료형이 정해지지 않은것, 대입이 되지 않았다
 
-let num1 = prompt("숫자 1");
-let num2 = prompt("숫자 2");
+let num1 = Number(prompt("숫자 1")); //형변환 number 또는 parseInt를 사용
+let num2 = parseInt(prompt("숫자 2"));
 console.log(num1+ num2);
