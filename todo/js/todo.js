@@ -31,6 +31,28 @@ class TodoEvent {
             }
         }
     }
+    addEventRemoveTodoClick() {
+        const removeButtons = document.querySelectorAll(".content-footer .remove-button");
+        removeButtons.forEach((removeButton, index) => {
+            removeButton.onclick = () => {
+                ModalService.getInstance().showRemoveModal(index);
+
+
+            }
+        });
+
+    }
+    addEventModifyTodoClick() {
+        const ModifyButtons = document.querySelectorAll(".content-footer .modify-button");
+        ModifyButtons.forEach((ModifyButton, index) => {
+            ModifyButton.onclick = () => {
+                ModalService.getInstance().showModifyModal(index);
+
+
+            }
+        });
+    }
+
 
 }
 class TodoService {
@@ -51,6 +73,12 @@ class TodoService {
             this.todoList = JSON.parse(localStorage.getItem("todoList"));
         }
         this.loadTodoList();
+
+    }
+    updateLocalStorage() {
+        localStorage.setItem("todoList", JSON.stringify(this.todoList));
+        this.loadTodoList();
+
 
     }
     addTodo() {
@@ -82,8 +110,7 @@ class TodoService {
 
         }
         this.todoList.push(todoObj);
-        localStorage.setItem("todoList", JSON.stringify(this.todoList));
-        this.loadTodoList();
+        this.updateLocalStorage();
 
     }
     loadTodoList() {
@@ -114,6 +141,9 @@ class TodoService {
             </li>
             `;
         });
+        TodoEvent.getInstnace().addEventModifyTodoClick();
+        TodoEvent.getInstnace().addEventRemoveTodoClick();
+
     }
 }
 
